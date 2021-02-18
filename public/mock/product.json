@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Лапша сублимированная \"Шин Рамён\" Корея 120 г",
+    "price": 68,
+    "photo": "/img/d6f16ce8d65bbe966cea71967d955b44.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Острая лапша со вкусом курицы Джаджан Samyang, Корея, 140 г",
+    "price": 98,
+    "photo": "/img/51c4600a0512ecb98e1f084fcca1c79f.png"
+  },
+  {
+    "id": 3,
+    "name": "Острая лапша Сута Рамен Samyang, Корея, 120 г",
+    "price": 68,
+    "photo": "/img/6bcb8e5fd08631ad130c3782a2d2cc5f.png"
+  },
+  {
+    "id": 4,
+    "name": "Лапша со вкусом курицы карри Samyang, Корея, 140 г",
+    "price": 98,
+    "photo": "/img/baaeeff371852e060b5af1eb4cd62888.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Лапша б/п со вкусом курицы с овощами Spicy Ramen Samyang, Корея, 120 г",
+    "price": 71,
+    "photo": "/img/e5db34f5720720e906823634c21106ce.png"
+  },
+  {
+    "id": 6,
+    "name": "Острая лапша рамен Stew со вкусом курицы Samyang, Корея, 145 г",
+    "price": 87,
+    "photo": "/img/459c735c8d4a9c2247dee2d4b066c223.png"
+  },
+  {
+    "id": 7,
+    "name": "Острая лапша рамен б/п Spicy Samyang, Корея, 65 г",
+    "price": 75,
+    "photo": "/img/9c74d8e880f8349dfaecade95c371757.png"
+  },
+  {
+    "id": 8,
+    "name": "Лапша б/п со вкусом сыра Cheese Ramen Samyang, Корея, 120 г",
+    "price": 111,
+    "photo": "/img/659f309a4934ac21a47b14c9d0d989ed.png"
+  },
+  {
+    "id": 9,
+    "name": "Лапша быстрого приготовления со вкусом курицы (острая) Samyang, Корея, 140 г",
+    "price": 98,
+    "photo": "/img/1c0a059d3e191a9ef262293c0c04380f.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Пшеничная лапша со вкусом курицы и кукурузы Hot Chicken Flavor Ramen Bouldak Corn",
+    "price": 109,
+    "photo": "/img/771d3e19f9a5824c82577c6d04448ec1.png"
+  },
+  {
+    "id": 11,
+    "name": "Лапша сублимированная \"Шин Рамён\" Корея 120 г",
+    "price": 68,
+    "photo": "/img/d6f16ce8d65bbe966cea71967d955b44.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Острая лапша со вкусом курицы Джаджан Samyang, Корея, 140 г",
+    "price": 98,
+    "photo": "/img/51c4600a0512ecb98e1f084fcca1c79f.png"
+  },
+  {
+    "id": 13,
+    "name": "Острая лапша Сута Рамен Samyang, Корея, 120 г",
+    "price": 68,
+    "photo": "/img/6bcb8e5fd08631ad130c3782a2d2cc5f.png"
+  },
+  {
+    "id": 14,
+    "name": "Лапша со вкусом курицы карри Samyang, Корея, 140 г",
+    "price": 98,
+    "photo": "/img/baaeeff371852e060b5af1eb4cd62888.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Лапша б/п со вкусом курицы с овощами Spicy Ramen Samyang, Корея, 120 г",
+    "price": 71,
+    "photo": "/img/e5db34f5720720e906823634c21106ce.png"
+  },
+  {
+    "id": 16,
+    "name": "Острая лапша рамен Stew со вкусом курицы Samyang, Корея, 145 г",
+    "price": 87,
+    "photo": "/img/459c735c8d4a9c2247dee2d4b066c223.png"
+  },
+  {
+    "id": 17,
+    "name": "Острая лапша рамен б/п Spicy Samyang, Корея, 65 г",
+    "price": 75,
+    "photo": "/img/9c74d8e880f8349dfaecade95c371757.png"
+  },
+  {
+    "id": 18,
+    "name": "Лапша б/п со вкусом сыра Cheese Ramen Samyang, Корея, 120 г",
+    "price": 111,
+    "photo": "/img/659f309a4934ac21a47b14c9d0d989ed.png"
+  },
+  {
+    "id": 19,
+    "name": "Лапша быстрого приготовления со вкусом курицы (острая) Samyang, Корея, 140 г",
+    "price": 98,
+    "photo": "/img/1c0a059d3e191a9ef262293c0c04380f.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Пшеничная лапша со вкусом курицы и кукурузы Hot Chicken Flavor Ramen Bouldak Corn",
+    "price": 109,
+    "photo": "/img/771d3e19f9a5824c82577c6d04448ec1.png"
+  }
+]
