@@ -16,19 +16,15 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <router-link to="/favorite" class="btn btn-light mr-2">
           Закладки
-          <span
-            v-if="this.$store.state.user.favorite.length"
-            class="badge badge-primary"
-            >{{ this.$store.state.user.favorite.length }}</span
-          >
+          <span v-if="this.getFavorite.length" class="badge badge-primary">{{
+            this.getFavorite.length
+          }}</span>
         </router-link>
         <router-link to="/basket" class="btn btn-light">
           Корзина
-          <span
-            v-if="this.$store.state.user.basket.length"
-            class="badge badge-primary"
-            >{{ this.$store.state.user.basket.length }}</span
-          >
+          <span v-if="this.getBasket.length" class="badge badge-primary">{{
+            this.getBasket.length
+          }}</span>
         </router-link>
       </div>
     </nav>
@@ -39,8 +35,11 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 export default {
+  computed: {
+    ...mapGetters(["getBasket", "getFavorite"])
+  },
   methods: {
     ...mapActions(["getLocalData"])
   },

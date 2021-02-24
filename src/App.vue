@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <Header>
+    <Wrapper>
       <router-view />
-    </Header>
+    </Wrapper>
   </div>
 </template>
 
 <script>
-import Header from "@/layouts/header.vue";
+import Wrapper from "@/layouts/Wrapper.vue";
 export default {
   components: {
-    Header
+    Wrapper
   }
 };
 </script>
