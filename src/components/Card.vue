@@ -58,9 +58,9 @@ export default {
     }
   },
   methods: {
-    ...mapMutations(["editFavorite", "addBasket"]),
+    ...mapMutations(["editFavorite", "editBasket"]),
     clickBasket() {
-      this.addBasket(this.item);
+      this.editBasket(this.item);
     },
     clickFavorite() {
       this.editFavorite(this.item);

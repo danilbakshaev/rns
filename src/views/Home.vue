@@ -7,13 +7,18 @@
     </div>
     <div class="container">
       <div class="row">
-        <Card v-for="product in products" :key="product.id" :item="product" />
+        <Card
+          v-for="product in getProducts"
+          :key="product.id"
+          :item="product"
+        />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 import Card from "@/components/Card.vue";
 export default {
   name: "Catalog",
@@ -22,9 +27,7 @@ export default {
     await this.$store.dispatch("fetchProducts");
   },
   computed: {
-    products() {
-      return this.$store.state.products;
-    }
+    ...mapGetters(["getProducts"])
   }
 };
 </script>

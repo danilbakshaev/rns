@@ -27,17 +27,32 @@ export default new Vuex.Store({
         state.user.favorite.push(data);
       }
     },
-    addBasket(state, data) {
+    editBasket(state, data) {
       let hasBasket = false;
-      data.quantity = 1;
-      state.user.basket.forEach(item => {
+      state.user.basket.forEach((item, index) => {
         if (item.id === data.id) {
+          state.user.basket.splice(index, 1);
           hasBasket = true;
         }
       });
       if (!hasBasket) {
+        Vue.set(data, "quantity", 1);
         state.user.basket.push(data);
       }
+    },
+    basketAddQuantity(state, id) {
+      state.user.basket.forEach(item => {
+        if (item.id === id) {
+          item.quantity++;
+        }
+      });
+    },
+    basketRemoveQuantity(state, id) {
+      state.user.basket.forEach(item => {
+        if (item.id === id && item.quantity > 1) {
+          item.quantity--;
+        }
+      });
     }
   },
   getters: {
