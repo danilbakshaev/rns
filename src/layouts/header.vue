@@ -1,7 +1,7 @@
 <template>
   <div class="LayoutDefault">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="/">Store</a>
+      <router-link class="navbar-brand" to="/">Logo</router-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -13,29 +13,23 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              >Disabled</a
-            >
-          </li>
-        </ul>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <router-link to="/favorite" class="btn btn-light mr-2">
+          Закладки
+          <span
+            v-if="this.$store.state.user.favorite.length"
+            class="badge badge-primary"
+            >{{ this.$store.state.user.favorite.length }}</span
+          >
+        </router-link>
+        <router-link to="/basket" class="btn btn-light">
+          Корзина
+          <span
+            v-if="this.$store.state.user.basket.length"
+            class="badge badge-primary"
+            >{{ this.$store.state.user.basket.length }}</span
+          >
+        </router-link>
       </div>
     </nav>
     <main>

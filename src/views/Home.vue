@@ -7,14 +7,7 @@
     </div>
     <div class="container">
       <div class="row">
-        <Card
-          v-for="product in this.$store.state.products"
-          :key="product.id"
-          :id="product.id"
-          :name="product.name"
-          :price="product.price"
-          :photo="product.photo"
-        />
+        <Card v-for="product in products" :key="product.id" :item="product" />
       </div>
     </div>
   </div>
@@ -27,6 +20,11 @@ export default {
   components: { Card },
   async mounted() {
     await this.$store.dispatch("fetchProducts");
+  },
+  computed: {
+    products() {
+      return this.$store.state.products;
+    }
   }
 };
 </script>
