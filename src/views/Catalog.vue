@@ -21,7 +21,9 @@
 import { mapGetters } from "vuex";
 import Card from "@/components/Card.vue";
 export default {
-  name: "Catalog",
+  metaInfo: {
+    title: "Каталог лапши"
+  },
   components: { Card },
   async mounted() {
     await this.$store.dispatch("fetchProducts");

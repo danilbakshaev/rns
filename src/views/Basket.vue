@@ -72,6 +72,9 @@
 <script>
 import { mapGetters, mapMutations } from "vuex";
 export default {
+  metaInfo: {
+    title: "Корзина"
+  },
   computed: {
     ...mapGetters(["getBasket"])
   },
