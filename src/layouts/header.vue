@@ -1,7 +1,7 @@
 <template>
   <div class="LayoutDefault">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <router-link class="navbar-brand" to="/">Logo</router-link>
+      <router-link class="navbar-brand" to="/">&#127836; Лапша</router-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -37,3 +37,15 @@
     </main>
   </div>
 </template>
+
+<script>
+import { mapActions } from "vuex";
+export default {
+  methods: {
+    ...mapActions(["getLocalData"])
+  },
+  mounted() {
+    this.getLocalData();
+  }
+};
+</script>

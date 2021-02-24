@@ -26,6 +26,7 @@ export default new Vuex.Store({
       if (!hasFavorite) {
         state.user.favorite.push(data);
       }
+      localStorage.setItem("user", JSON.stringify(state.user));
     },
     editBasket(state, data) {
       let hasBasket = false;
@@ -39,6 +40,7 @@ export default new Vuex.Store({
         Vue.set(data, "quantity", 1);
         state.user.basket.push(data);
       }
+      localStorage.setItem("user", JSON.stringify(state.user));
     },
     basketAddQuantity(state, id) {
       state.user.basket.forEach(item => {
@@ -46,6 +48,7 @@ export default new Vuex.Store({
           item.quantity++;
         }
       });
+      localStorage.setItem("user", JSON.stringify(state.user));
     },
     basketRemoveQuantity(state, id) {
       state.user.basket.forEach(item => {
@@ -53,6 +56,10 @@ export default new Vuex.Store({
           item.quantity--;
         }
       });
+      localStorage.setItem("user", JSON.stringify(state.user));
+    },
+    writeLocalData(state, data) {
+      state.user = data;
     }
   },
   getters: {
@@ -71,6 +78,13 @@ export default new Vuex.Store({
       await fetch("mock/product.json")
         .then(resp => resp.json())
         .then(data => commit("writeProduct", data));
+    },
+    getLocalData({ commit }) {
+      let user = null;
+      if (localStorage.getItem("user")) {
+        user = localStorage.getItem("user");
+        commit("writeLocalData", JSON.parse(user));
+      }
     }
   },
   modules: {}
